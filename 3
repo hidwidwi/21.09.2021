@@ -1,0 +1,329 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int integer, integer1;
+	integer = 0;
+	integer1 = 0;
+	cin >> integer;
+	integer1 = integer;
+	string a, b, c, d, e, f, g;
+
+	if (integer > 10000000) {
+		cout << "Ошибка!";
+	}
+
+	if ((integer / 1000000) == 10) {
+		cout << "Десять миллионов";
+	}
+	if (integer == 10) {
+		cout << "Десять";
+	}
+	if ((integer % 10) == 1) {
+		g = "один";
+	}
+	else if ((integer % 10) == 2) {
+		g = "два";
+	}
+	else if ((integer % 10) == 3) {
+		g = "три";
+	}
+	else if ((integer % 10) == 4) {
+		g = "четыре";
+	}
+	else if ((integer % 10) == 5) {
+		g = "пять";
+	}
+	else if ((integer % 10) == 6) {
+		g = "шесть";
+	}
+	else if ((integer % 10) == 7) {
+		g = "семь";
+	}
+	else if ((integer % 10) == 8) {
+		g = "восемь";
+	}
+	else if ((integer % 10) == 9) {
+		g = "девять";
+	}
+	else if ((integer % 10) == 0) {
+		g = " ";
+	}
+
+	if ((integer1 / 10) >= 1) {
+
+		integer = integer / 10;
+
+		if ((integer % 10) == 1) {
+			if (g == "один") {
+				g = "одиннадцать";
+			}
+			if (g == "два") {
+				g = "двенадцать";
+			}
+			if (g == "три") {
+				g = "тринадцать";
+			}
+			if (g == "четыре") {
+				g = "четырнадцать";
+			}
+			if (g == "пять") {
+				g = "пятнадцать";
+			}
+			if (g == "шесть") {
+				g = "шестнадцать";
+			}
+			if (g == "семь") {
+				g = "семнадцать";
+			}
+			if (g == "восемь") {
+				g = "восемнадцать";
+			}
+			if (g == "девять") {
+				g = "девятнадцать";
+			}
+		}
+		else if ((integer % 10) == 2) {
+			f = "двадцать";
+		}
+		else if ((integer % 10) == 3) {
+			f = "тридцать";
+		}
+		else if ((integer % 10) == 4) {
+			f = "сорок";
+		}
+		else if ((integer % 10) == 5) {
+			f = "пятьдесят";
+		}
+		else if ((integer % 10) == 6) {
+			f = "шестьдесят";
+		}
+		else if ((integer % 10) == 7) {
+			f = "семьдесят";
+		}
+		else if ((integer % 10) == 8) {
+			f = "восемьдесят";
+		}
+		else if ((integer % 10) == 9) {
+			f = "девяносто";
+		}
+		else if ((integer % 10) == 0) {
+			f = " ";
+		}
+	}
+
+	if ((integer1 / 100) >= 1) {
+		integer = integer / 10;
+
+		if ((integer % 10) == 1) {
+			e = "сто";
+		}
+		else if ((integer % 10) == 2) {
+			e = "двести";
+		}
+		else if ((integer % 10) == 3) {
+			e = "триста";
+		}
+		else if ((integer % 10) == 4) {
+			e = "четыреста";
+		}
+		else if ((integer % 10) == 5) {
+			e = "пятьсот";
+		}
+		else if ((integer % 10) == 6) {
+			e = "шестьсот";
+		}
+		else if ((integer % 10) == 7) {
+			e = "семьсот";
+		}
+		else if ((integer % 10) == 8) {
+			e = "восемьсот";
+		}
+		else if ((integer % 10) == 9) {
+			e = "девятьсот";
+		}
+		else if ((integer % 10) == 0) {
+			e = " ";
+		}
+	}
+
+	if ((integer1 / 1000) >= 1) {
+		integer = integer / 10;
+
+		if ((integer % 10) == 1) {
+			d = "одна тысяча";
+		}
+		else if ((integer % 10) == 2) {
+			d = "две тысячи";
+		}
+		else if ((integer % 10) == 3) {
+			d = "три тысячи";
+		}
+		else if ((integer % 10) == 4) {
+			d = "четыре тысячи";
+		}
+		else if ((integer % 10) == 5) {
+			d = "пять тысяч";
+		}
+		else if ((integer % 10) == 6) {
+			d = "шесть тысяч";
+		}
+		else if ((integer % 10) == 7) {
+			d = "семь тысяч";
+		}
+		else if ((integer % 10) == 8) {
+			d = "восемь тысяч";
+		}
+		else if ((integer % 10) == 9) {
+			d = "девять тысяч";
+		}
+		
+	}
+
+	if ((integer1 / 10000) >= 1) {
+		integer = integer / 10;
+
+		if ((integer % 10) == 1) {
+			if (d == "одна тысяча") {
+				d = "одиннадцать тысяч";
+			}
+			if (d == "две тысячи") {
+				d = "двенадцать тысяч";
+			}
+			if (d == "три тысячи") {
+				d = "тринадцать тысяч";
+			}
+			if (d == "четыре тысячи") {
+				d = "четырнадцать тысяч";
+			}
+			if (d == "пять тысяч") {
+				d = "пятнадцать тысяч";
+			}
+			if (d == "шесть тысяч") {
+				d = "шестнадцать тысяч";
+			}
+			if (d == "семь тысяч") {
+				d = "семнадцать тысяч";
+			}
+			if (d == "восемь тысяч") {
+				d = "восемнадцать тысяч";
+			}
+			if (d == "девять тысяч") {
+				d = "девятнадцать тысяч";
+			}
+		}
+		else if ((integer1 % 1000) == 0) {
+			if ((integer % 10) == 2) {
+				c = "двадцать тысяч";
+			}
+			else if ((integer % 10) == 3) {
+				c = "тридцать тысяч";
+			}
+			else if ((integer % 10) == 4) {
+				c = "сорок тысяч";
+			}
+			else if ((integer % 10) == 5) {
+				c = "пятьдесят тысяч";
+			}
+			else if ((integer % 10) == 6) {
+				c = "шестьдесят тысяч";
+			}
+			else if ((integer % 10) == 7) {
+				c = "семьдесят тысяч";
+			}
+			else if ((integer % 10) == 8) {
+				c = "восемьдесят тысяч";
+			}
+			else if ((integer % 10) == 9) {
+				c = "девяносто тысяч";
+			}
+		}
+		else if ((integer % 10) == 2) {
+			c = "двадцать";
+		}
+		else if ((integer % 10) == 3) {
+			c = "тридцать";
+		}
+		else if ((integer % 10) == 4) {
+			c = "сорок";
+		}
+		else if ((integer % 10) == 5) {
+			c = "пятьдесят";
+		}
+		else if ((integer % 10) == 6) {
+			c = "шестьдесят";
+		}
+		else if ((integer % 10) == 7) {
+			c = "семьдесят";
+		}
+		else if ((integer % 10) == 8) {
+			c = "восемьдесят";
+		}
+		else if ((integer % 10) == 9) {
+			c = "девяносто";
+		}
+	}
+
+	if ((integer1 / 100000) >= 1) {
+		integer = integer / 10;
+		if ((integer % 10) == 1) {
+			b = "сто";
+		}
+		else if ((integer % 10) == 2) {
+			b = "двести";
+		}
+		else if ((integer % 10) == 3) {
+			b = "триста";
+		}
+		else if ((integer % 10) == 4) {
+			b = "четыреста";
+		}
+		else if ((integer % 10) == 5) {
+			b = "пятьсот";
+		}
+		else if ((integer % 10) == 6) {
+			b = "шестьсот";
+		}
+		else if ((integer % 10) == 7) {
+			b = "семьсот";
+		}
+		else if ((integer % 10) == 8) {
+			b = "восемьсот";
+		}
+		else if ((integer % 10) == 9) {
+			b = "девятьсот";
+		}
+	}
+
+	if ((integer1 / 1000000) >= 1) {
+		if ((integer1 / 1000000) == 1) {
+			a = "Один миллион";
+		}
+		else if ((integer1 / 1000000) == 2) {
+			a = "Два миллиона";
+		}
+		else if ((integer1 / 1000000) == 3) {
+			a = "Три миллиона";
+		}
+		else if ((integer1 / 1000000) == 4) {
+			a = "Четыре миллиона";
+		}
+		else if ((integer1 / 1000000) == 5) {
+			a = "Пять миллионов";
+		}
+		else if ((integer1 / 1000000) == 6) {
+			a = "Шесть миллионов";
+		}
+		else if ((integer1 / 1000000) == 7) {
+			a = "Семь миллионов";
+		}
+		else if ((integer1 / 1000000) == 8) {
+			a = "Восемь миллионов";
+		}
+		else if ((integer1 / 1000000) == 9) {
+			a = "Девять миллионов";
+		}
+	}
+	cout << a << " " << b << " " << c << " " << d << " " << e << " " << f << " " << g;
+	return 0;
+}
